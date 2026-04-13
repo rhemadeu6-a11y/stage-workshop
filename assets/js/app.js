@@ -318,7 +318,7 @@
 
     function updateMeta(title, desc) {
       document.title = title;
-      const url = 'https://stage-workshop.vercel.app' + location.pathname;
+      const url = 'https://stageworks.kr' + location.pathname;
       const metaDesc = document.querySelector('meta[name="description"]');
       if (metaDesc && desc) metaDesc.setAttribute('content', desc);
       const ogTitle = document.querySelector('meta[property="og:title"]');
@@ -340,7 +340,7 @@
       var existing = document.getElementById('breadcrumbSchema');
       if (existing) existing.remove();
       if (!items || items.length < 2) return;
-      var baseUrl = 'https://stage-workshop.vercel.app';
+      var baseUrl = 'https://stageworks.kr';
       var schema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
@@ -388,7 +388,7 @@
         '<input type="hidden" name="access_key" value="b5ae2226-54fc-4696-be68-2f8d99f62055">' +
         '<input type="hidden" name="subject" value="[무대 공작소] 새 프로젝트 문의">' +
         '<input type="hidden" name="from_name" value="무대 공작소 웹사이트">' +
-        '<input type="hidden" name="redirect" value="https://stage-workshop.vercel.app/contact">' +
+        '<input type="hidden" name="redirect" value="https://stageworks.kr/contact">' +
         '<input type="checkbox" name="botcheck" style="display:none">' +
         '<div class="form-group"><label for="cf-name" class="form-label">이름 / 회사명 <span style="color:var(--gold);">*</span></label><input type="text" id="cf-name" name="name" placeholder="예: 홍길동 또는 ABC 이벤트" required /></div>' +
         '<div class="form-group"><label for="cf-phone" class="form-label">전화번호 <span style="color:var(--gold);">*</span></label><input type="tel" id="cf-phone" name="phone" placeholder="예: 010-1234-5678" required /></div>' +
