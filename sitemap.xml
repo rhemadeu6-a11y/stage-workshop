@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/0.9">
+
+  <url>
+    <loc>https://stageworks.kr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://stageworks.kr/assets/og-image.jpg</image:loc>
+      <image:title>무대공작소 조명음향렌탈연합</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://stageworks.kr/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://stageworks.kr/services</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://stageworks.kr/services/lighting</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/led</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/sound</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/broadcast</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/sfx</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/stage</loc><priority>0.8</priority></url>
+  <url><loc>https://stageworks.kr/services/install</loc><priority>0.8</priority></url>
+
+  <url>
+    <loc>https://stageworks.kr/portfolio</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url><loc>https://stageworks.kr/portfolio/dominick</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/dujeonku</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/kanoimiyu</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/hiromi</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/fourplay</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/sandle</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/finkl</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/welove2022</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/koreauniv</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/ailee</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/ywam</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/hamchunho</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/woolpla</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/shakers</loc><priority>0.7</priority></url>
+  <url><loc>https://stageworks.kr/portfolio/oktopjazz</loc><priority>0.7</priority></url>
+
+  <url>
+    <loc>https://stageworks.kr/team</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://stageworks.kr/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
