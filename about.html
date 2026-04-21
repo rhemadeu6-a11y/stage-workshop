@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About · STAGE WORKS 무대공작소</title>
+<meta name="description" content="콘서트·내한공연·방송·야외행사 연간 200건 이상을 운영하는 무대공작소 팀 소개. 조명·음향·LED·무대시스템 전문가가 모인 렌탈연합의 철학과 역량.">
+<link rel="canonical" href="https://stageworks.kr/about">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STAGE WORKS 무대공작소">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://stageworks.kr/about">
+<meta property="og:title" content="About · STAGE WORKS 무대공작소">
+<meta property="og:description" content="조명·음향·LED·무대시스템 전문가 연합 — 콘서트·내한공연·방송 프로젝트를 매년 200건 이상 운영하는 팀의 철학과 역량.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/stage.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0E10'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23E8863A'/%3E%3C/svg%3E">
+<style>
+.page-hero { padding: clamp(120px, 15vw, 200px) 0 clamp(48px, 7vw, 96px); border-bottom: 1px solid var(--line); }
+.page-hero .wrap { display: grid; grid-template-columns: 160px 1fr; gap: 48px; }
+.page-hero .cue { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--amber); }
+.page-hero h1 { font-family: 'Paperlogy', sans-serif; font-weight: 900; font-size: var(--fs-hero); line-height: 0.92; letter-spacing: -0.035em; color: var(--ivory); margin: 24px 0; max-width: 18ch; }
+.page-hero h1 .em { color: var(--amber); }
+.page-hero .lead { font-size: var(--fs-h3); line-height: 1.65; color: var(--body); max-width: 54ch; margin-top: 32px; }
+@media (max-width: 720px) { .page-hero .wrap { grid-template-columns: 1fr; gap: 16px; } }
+
+.two-col { display: grid; grid-template-columns: 1fr 1.5fr; gap: 64px; }
+@media (max-width: 900px) { .two-col { grid-template-columns: 1fr; gap: 32px; } }
+.two-col h3 { font-family: 'Paperlogy', sans-serif; font-weight: 800; font-size: var(--fs-h2); line-height: 1.1; letter-spacing: -0.02em; color: var(--ivory); max-width: 14ch; }
+.two-col p { font-size: 16px; line-height: 1.75; color: var(--body); margin-bottom: 24px; max-width: 58ch; }
+.two-col p strong { color: var(--ivory); font-weight: 700; }
+
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
+.kpi { background: var(--black); padding: 40px 28px; }
+.kpi .n { font-family: 'Paperlogy', sans-serif; font-weight: 800; font-size: clamp(36px, 3.4vw, 56px); color: var(--ivory); letter-spacing: -0.02em; line-height: 1; font-feature-settings: 'tnum' 1; }
+.kpi .n .sfx { color: var(--amber); font-size: 0.5em; margin-left: 4px; }
+.kpi .l { font-family: 'Inter', sans-serif; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--dim); margin-top: 14px; }
+@media (max-width: 720px) { .kpi-grid { grid-template-columns: 1fr 1fr; } }
+
+.team-list { border-top: 1px solid var(--line); }
+.team-row { display: grid; grid-template-columns: 60px 1fr 1fr 1.5fr; gap: 32px; padding: 24px 0; border-bottom: 1px solid var(--line); align-items: center; }
+.team-row .ix { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--amber); letter-spacing: 0.12em; }
+.team-row .nm { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 15px; letter-spacing: 0.06em; color: var(--ivory); }
+.team-row .pr { font-size: 14px; color: var(--body); }
+.team-row .rl { font-size: 13px; color: var(--dim); line-height: 1.55; }
+@media (max-width: 720px) {
+  .team-row { grid-template-columns: 40px 1fr; gap: 12px; padding: 18px 0; }
+  .team-row .pr, .team-row .rl { grid-column: 2 / -1; }
+}
+
+.credit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.credit { background: var(--black); padding: 32px 24px; }
+.credit h4 { font-family: 'Paperlogy', sans-serif; font-weight: 800; font-size: 18px; color: var(--ivory); margin-bottom: 8px; line-height: 1.3; }
+.credit .v { font-size: 13px; color: var(--amber); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.08em; }
+.credit .r { font-size: 13px; color: var(--dim); margin-top: 12px; line-height: 1.6; }
+@media (max-width: 720px) { .credit-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<aside class="rail">
+  <div class="rail-mark">SW<br>— <span style="color:var(--amber)">22</span></div>
+  <div class="rail-vert">ABOUT · WHO WE ARE</div>
+  <div class="rail-phone">010 · 7737 · 0387</div>
+</aside>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="dot"></span><span class="mk">STAGE WORKS</span><span class="kr">무대공작소</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Index</a>
+    <a href="about.html" class="active">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html" class="nav-cta">견적 문의</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div>
+      <div class="cue">REEL · ABOUT</div>
+    </div>
+    <div>
+      <h1>공연을 <span class="em">실제로 돌려본</span><br>사람이 시스템을 설계한다.</h1>
+      <p class="lead">무대공작소는 장비 대여 업체가 아니다. 조명·음향·LED스크린·무대 시스템 설계와 공연 기획까지 함께 운영하는 제작 협업 네트워크 기반 공연 기술팀이다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="two-col reveal">
+      <h3>엔지니어가<br>쓰는 브리프.</h3>
+      <div>
+        <p>우리는 FOH에서 페이더를 올리고, 트러스에 올라가 무빙을 패치하고, 사다리차에서 LED를 맞추는 사람들이다. <strong>말이 아닌 현장으로 증명한다.</strong></p>
+        <p>단순 장비 대여가 아니다. 공연 제작 경험에서 출발한 시스템 설계팀이 조명·음향·LED스크린·무대 시스템까지 통합 설계하고 직접 운영한다. 야외행사·학교축제·콘서트·내한공연·기업행사·방송촬영·교회·대강당까지 전 범위를 담당한다.</p>
+        <p>연간 200건 이상의 프로젝트를 수행하며, 10년 이상의 현장 경험을 가진 <strong>9개 전문 팀</strong>이 통합 운영한다. 프로젝트 규모와 성격에 따라 필요한 팀이 편성되어 투입된다.</p>
+      </div>
+    </div>
+
+    <div class="kpi-grid reveal">
+      <div class="kpi"><div class="n">200<span class="sfx">+</span></div><div class="l">Projects / Year</div></div>
+      <div class="kpi"><div class="n">10<span class="sfx">Y+</span></div><div class="l">Field Experience</div></div>
+      <div class="kpi"><div class="n">09</div><div class="l">Specialist Teams</div></div>
+      <div class="kpi"><div class="n">2015</div><div class="l">Founded</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--black-2); padding-top: clamp(64px, 8vw, 110px)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="meta">
+        <div class="cue">REEL · NETWORK</div>
+        <div class="rule-amber"></div>
+      </div>
+      <div>
+        <h2>9개 전문 팀,<br>하나의 오퍼레이션.</h2>
+        <p class="kicker">각 팀은 고유의 전문 영역을 가진 독립 조직이며, 프로젝트 성격에 따라 최적의 조합으로 편성된다.</p>
+      </div>
+    </div>
+
+    <div class="team-list reveal">
+      <div class="team-row"><span class="ix">01</span><span class="nm">무대 공작소</span><span class="pr">안윤근 대표</span><span class="rl">무대 조명 · 토탈 시스템 · 총괄 디렉터</span></div>
+      <div class="team-row"><span class="ix">02</span><span class="nm">LUXGRID</span><span class="pr">안준형 부장</span><span class="rl">LED 스크린 렌탈 · 시공 및 납품</span></div>
+      <div class="team-row"><span class="ix">03</span><span class="nm">CHI</span><span class="pr">임철하 실장</span><span class="rl">무대 조명 · LED 스크린 렌탈</span></div>
+      <div class="team-row"><span class="ix">04</span><span class="nm">WITH J</span><span class="pr">이종환 매니저</span><span class="rl">온맘시어터 매니저 · 무대 조명 · LED</span></div>
+      <div class="team-row"><span class="ix">05</span><span class="nm">HANVIT MEDIATECH</span><span class="pr">박영서 팀장</span><span class="rl">무대 조명 · 음향 · LED · 설계 및 도면 제작</span></div>
+      <div class="team-row"><span class="ix">06</span><span class="nm">MEDIACUBE</span><span class="pr">윤주영 팀장</span><span class="rl">무대 조명 · 음향 · 방송 · 영상 디자인</span></div>
+      <div class="team-row"><span class="ix">07</span><span class="nm">CONNECTED HK</span><span class="pr">이환희 팀장</span><span class="rl">무대 연출 · 행사 기획 · PM · 영업 · 마케팅</span></div>
+      <div class="team-row"><span class="ix">08</span><span class="nm">소리쟁이</span><span class="pr">정지원 팀장</span><span class="rl">무대 음향 · 음향 시공</span></div>
+      <div class="team-row"><span class="ix">09</span><span class="nm">INMATE</span><span class="pr">박주향 대표</span><span class="rl">공연 기획 · 아티스트 매니지먼트</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="meta">
+        <div class="cue">REEL · CREDITS</div>
+        <div class="rule-amber"></div>
+      </div>
+      <div>
+        <h2>대표 레퍼런스.<br>이름이 증거다.</h2>
+      </div>
+    </div>
+
+    <div class="credit-grid reveal">
+      <div class="credit"><h4>FOURPLAY &amp; BOB JAMES</h4><div class="v">INT'L JAZZ</div><div class="r">재즈 거장들의 내한공연 조명 연출.</div></div>
+      <div class="credit"><h4>HILLSONG 내한공연 예배</h4><div class="v">WORSHIP</div><div class="r">대규모 예배 음향 · 조명 · 중계.</div></div>
+      <div class="credit"><h4>SHOW ME THE MONEY 6</h4><div class="v">BROADCAST</div><div class="r">게릴라 콘서트 무대 시스템 운영.</div></div>
+      <div class="credit"><h4>MIX NINE / 겁없는 녀석들</h4><div class="v">TV / BROADCAST</div><div class="r">방송 무대 시스템 참여.</div></div>
+      <div class="credit"><h4>IM HYUNGJOO CONCERT</h4><div class="v">CONCERT</div><div class="r">임형주 콘서트 시리즈 운영.</div></div>
+      <div class="credit"><h4>HIROMI'S SONICWONDER 2026</h4><div class="v">JAZZ · 내한</div><div class="r">마포아트센터 내한공연 조명.</div></div>
+      <div class="credit"><h4>DOMINICK JOCKER — ONE LOVE NIGHT</h4><div class="v">KBS 아레나</div><div class="r">대형 콘서트 통합 시스템.</div></div>
+      <div class="credit"><h4>JTBC 캠핑클럽 — 핑클</h4><div class="v">BROADCAST</div><div class="r">야외 특설 무대 설치 · 조명 · LED.</div></div>
+      <div class="credit"><h4>예수전도단 크리스마스 뮤비</h4><div class="v">MV SHOOTING</div><div class="r">뮤직비디오 촬영 조명 연출.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-block" style="border-top:1px solid var(--amber)">
+  <div class="cta-inner">
+    <h2 class="reveal">함께 일할<br><span class="em">준비가 되어 있다.</span></h2>
+    <div class="cta-right reveal">
+      <a href="contact.html" class="btn btn-primary" style="padding:18px 32px">견적 문의하기 <span class="arr">→</span></a>
+      <a href="tel:+8201077370387" class="cta-phone">
+        <span class="lbl">DIRECT · 24H 이내 응답</span>
+        010 · 7737 · 0387
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="mk">STAGE WORKS</div>
+      <div class="kr">무대공작소 조명음향렌탈연합</div>
+      <p>공연 제작 경험에서 출발한 시스템 설계팀. 조명·음향·LED스크린·무대 시스템을 통합 설계·운영한다.</p>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#lighting">무대 조명 렌탈</a></li>
+        <li><a href="services.html#sound">무대 음향 렌탈</a></li>
+        <li><a href="services.html#led">LED 스크린</a></li>
+        <li><a href="services.html#broadcast">중계/송출</a></li>
+        <li><a href="services.html#install">음향·조명 시공</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="about.html">회사 소개</a></li>
+        <li><a href="portfolio.html">프로젝트</a></li>
+        <li><a href="contact.html">견적 문의</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+8201077370387">010 · 7737 · 0387</a></li>
+        <li style="color:var(--dim)">Seoul · KR</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 STAGE WORKS 무대공작소.</span>
+    <span><span class="amber-dot">●</span> ON AIR · EST. 2015</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

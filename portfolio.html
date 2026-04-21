@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio · STAGE WORKS 무대공작소</title>
+<meta name="description" content="에일리·핑클·동방신기·포플레이·한채영·오크톱재즈·욲앰 등 콘서트·내한공연·페스티벌 레퍼런스. 무대공작소가 운영한 주요 프로젝트 아카이브.">
+<link rel="canonical" href="https://stageworks.kr/portfolio">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STAGE WORKS 무대공작소">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://stageworks.kr/portfolio">
+<meta property="og:title" content="Portfolio · STAGE WORKS 무대공작소">
+<meta property="og:description" content="콘서트·내한공연·페스티벌 레퍼런스 아카이브. 무대공작소가 조명·음향·LED·무대시스템을 운영한 주요 프로젝트.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/stage.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0E10'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23E8863A'/%3E%3C/svg%3E">
+<style>
+.page-hero { padding: clamp(120px, 15vw, 200px) 0 clamp(48px, 7vw, 96px); border-bottom: 1px solid var(--line); }
+.page-hero .wrap { display: grid; grid-template-columns: 160px 1fr; gap: 48px; }
+.page-hero .cue { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--amber); }
+.page-hero h1 { font-family: 'Paperlogy', sans-serif; font-weight: 900; font-size: var(--fs-hero); line-height: 0.92; letter-spacing: -0.035em; color: var(--ivory); margin: 24px 0; max-width: 16ch; }
+.page-hero h1 .em { color: var(--amber); }
+.page-hero .lead { font-size: var(--fs-h3); line-height: 1.65; color: var(--body); max-width: 54ch; margin-top: 24px; }
+@media (max-width: 720px) { .page-hero .wrap { grid-template-columns: 1fr; gap: 16px; } }
+
+.pf-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 48px; }
+.pf-filter button {
+  font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--body); padding: 10px 16px;
+  border: 1px solid var(--line); border-radius: 2px;
+  transition: all 0.22s var(--ease);
+}
+.pf-filter button:hover, .pf-filter button.on { border-color: var(--amber); color: var(--amber); background: rgba(232,134,58,0.06); }
+
+.pf-grid {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px;
+}
+.pf-card {
+  position: relative; overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--char);
+  transition: border-color 0.25s var(--ease), transform 0.4s var(--ease);
+  display: block;
+}
+.pf-card:hover { border-color: var(--amber); transform: translateY(-4px); }
+.pf-img {
+  width: 100%; aspect-ratio: 16/9;
+  background-size: cover; background-position: center;
+  filter: grayscale(0.1) contrast(1.05) brightness(0.78);
+  transition: transform 0.6s var(--ease), filter 0.35s var(--ease);
+}
+.pf-card:hover .pf-img { transform: scale(1.04); filter: grayscale(0) contrast(1.05) brightness(0.9); }
+.pf-body { padding: 24px; }
+.pf-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.pf-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--amber); }
+.pf-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--dim); text-transform: uppercase; }
+.pf-card h3 {
+  font-family: 'Paperlogy', sans-serif; font-weight: 700;
+  font-size: clamp(17px, 1.3vw, 20px);
+  line-height: 1.3; letter-spacing: -0.01em;
+  color: var(--ivory); margin-bottom: 8px;
+}
+.pf-venue { font-size: 13px; color: var(--body); line-height: 1.55; }
+.pf-scope { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; color: var(--dim); text-transform: uppercase; }
+
+.pf-w12 { grid-column: span 12; }
+.pf-w8  { grid-column: span 8; }
+.pf-w6  { grid-column: span 6; }
+.pf-w4  { grid-column: span 4; }
+.pf-w12 .pf-img { aspect-ratio: 21/9; }
+.pf-w8  .pf-img { aspect-ratio: 16/10; }
+
+@media (max-width: 900px) {
+  .pf-w12, .pf-w8, .pf-w6, .pf-w4 { grid-column: span 12; }
+  .pf-grid { gap: 16px; }
+}
+
+.pf-featured {
+  grid-column: span 12;
+  background: var(--black-2);
+  border: 1px solid var(--amber);
+  display: grid; grid-template-columns: 1.4fr 1fr;
+  overflow: hidden;
+}
+.pf-featured .pf-img { aspect-ratio: auto; height: 100%; min-height: 420px; filter: grayscale(0) contrast(1.05) brightness(0.85); }
+.pf-featured .pf-body { padding: 48px; display: flex; flex-direction: column; justify-content: center; }
+.pf-featured h3 { font-size: clamp(24px, 2.2vw, 34px); line-height: 1.2; margin-bottom: 12px; }
+.pf-featured .lead { font-size: 14.5px; line-height: 1.7; color: var(--body); margin: 12px 0 20px; }
+@media (max-width: 900px) { .pf-featured { grid-template-columns: 1fr; } .pf-featured .pf-img { min-height: 260px; } .pf-featured .pf-body { padding: 32px; } }
+</style>
+</head>
+<body>
+
+<aside class="rail">
+  <div class="rail-mark">SW<br>— <span style="color:var(--amber)">22</span></div>
+  <div class="rail-vert">PORTFOLIO · SELECTED WORK</div>
+  <div class="rail-phone">010 · 7737 · 0387</div>
+</aside>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand"><span class="dot"></span><span class="mk">STAGE WORKS</span><span class="kr">무대공작소</span></a>
+  <nav class="nav-links">
+    <a href="index.html">Index</a><a href="about.html">About</a>
+    <a href="services.html">Services</a><a href="portfolio.html" class="active">Portfolio</a>
+    <a href="contact.html" class="nav-cta">견적 문의</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div><div class="cue">REEL · PORTFOLIO</div></div>
+    <div>
+      <h1>이름이 <span class="em">증거다.</span></h1>
+      <p class="lead">재즈·힙합·예배·방송·뮤직비디오·페스티벌. 장르와 규모를 가리지 않고 한 팀이 대응한다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="pf-filter reveal" id="pfFilter">
+      <button class="on" data-f="all">ALL · 15</button>
+      <button data-f="concert">Concert</button>
+      <button data-f="jazz">Jazz</button>
+      <button data-f="festival">Festival</button>
+      <button data-f="broadcast">Broadcast / MV</button>
+      <button data-f="event">Event</button>
+    </div>
+
+    <div class="pf-grid" id="pfGrid">
+
+      <a href="#" class="pf-card pf-featured reveal" data-cat="concert" id="dominick">
+        <div class="pf-img" style="background-image:url('assets/dominick/new-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 001</span><span class="pf-tag">CONCERT · FEATURED</span></div>
+          <h3>Dominick Jocker "One Love Night"</h3>
+          <p class="pf-venue">KBS 아레나 · 대형 콘서트</p>
+          <p class="lead">대형 콘서트장 KBS 아레나에서 진행된 원 러브 나잇. 조명·LED·음향 통합 시스템 설계와 전 공정 운영을 담당했다.</p>
+          <div class="pf-scope">LIGHT · LED SCREEN · SOUND · SFX</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w8 reveal" data-cat="jazz" id="hiromi">
+        <div class="pf-img" style="background-image:url('assets/hiromi/stage-03.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 002</span><span class="pf-tag">JAZZ · 내한</span></div>
+          <h3>Hiromi's Sonicwonder 2026 내한공연</h3>
+          <p class="pf-venue">마포아트센터 · 2026</p>
+          <div class="pf-scope">CONCERT · LIGHT · JAZZ</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="jazz" id="fourplay">
+        <div class="pf-img" style="background-image:url('assets/fourplay/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 003</span><span class="pf-tag">JAZZ</span></div>
+          <h3>포플레이 &amp; 밥 제임스 내한</h3>
+          <p class="pf-venue">재즈 콘서트</p>
+          <div class="pf-scope">LIGHT · JAZZ</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="concert" id="dujeonku">
+        <div class="pf-img" style="background-image:url('assets/dujeonku/new-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 004</span><span class="pf-tag">CONCERT</span></div>
+          <h3>두쫀쿠 콘서트</h3>
+          <p class="pf-venue">상암 숲 콜로세움</p>
+          <div class="pf-scope">CONCERT · LIGHT · LED SCREEN</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="concert" id="kanoimiyu">
+        <div class="pf-img" style="background-image:url('assets/kanoimiyu/new-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 005</span><span class="pf-tag">CONCERT · 내한</span></div>
+          <h3>카노이미유 (KANO MIYU) 내한 콘서트</h3>
+          <p class="pf-venue">서울 · 내한공연</p>
+          <div class="pf-scope">LIGHT · SOUND</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="concert" id="sandle">
+        <div class="pf-img" style="background-image:url('assets/sandle/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 006</span><span class="pf-tag">CONCERT</span></div>
+          <h3>산들 &amp; B1A4 Music Collection</h3>
+          <p class="pf-venue">공연장</p>
+          <div class="pf-scope">LIGHT · LED SCREEN</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="broadcast" id="finkl">
+        <div class="pf-img" style="background-image:url('assets/finkl/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 007</span><span class="pf-tag">BROADCAST</span></div>
+          <h3>JTBC 캠핑클럽 — 핑클</h3>
+          <p class="pf-venue">야외 특설 무대</p>
+          <div class="pf-scope">LIGHT · LED · STAGE · BROADCAST</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="festival" id="welove2022">
+        <div class="pf-img" style="background-image:url('assets/welove2022/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 008</span><span class="pf-tag">FESTIVAL</span></div>
+          <h3>위러브 2022 페스티벌</h3>
+          <p class="pf-venue">대형 페스티벌</p>
+          <div class="pf-scope">LIGHT · STAGE SETUP</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="event" id="koreauniv">
+        <div class="pf-img" style="background-image:url('assets/korea-univ/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 009</span><span class="pf-tag">EVENT</span></div>
+          <h3>고려대학교 공과대학 60주년 기념행사</h3>
+          <p class="pf-venue">고려대학교</p>
+          <div class="pf-scope">LIGHT · LED SCREEN</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="broadcast" id="ailee">
+        <div class="pf-img" style="background-image:url('assets/ailee/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 010</span><span class="pf-tag">MV</span></div>
+          <h3>딩고 · 에일리 뮤직비디오</h3>
+          <p class="pf-venue">촬영 스튜디오</p>
+          <div class="pf-scope">MV · LIGHT · BROADCAST</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="broadcast" id="ywam">
+        <div class="pf-img" style="background-image:url('assets/ywam/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 011</span><span class="pf-tag">MV</span></div>
+          <h3>예수전도단 크리스마스 앨범 뮤비</h3>
+          <p class="pf-venue">촬영 현장</p>
+          <div class="pf-scope">MV · LIGHT</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="concert" id="hamchunho">
+        <div class="pf-img" style="background-image:url('assets/hamchunho/stage-03.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 012</span><span class="pf-tag">CONCERT</span></div>
+          <h3>함춘호 &amp; 송창식 콘서트</h3>
+          <p class="pf-venue">부천시민회관</p>
+          <div class="pf-scope">LIGHT · LED SCREEN</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w4 reveal" data-cat="concert" id="woolpla">
+        <div class="pf-img" style="background-image:url('assets/woolpla/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 013</span><span class="pf-tag">CONCERT</span></div>
+          <h3>울플러 콘서트</h3>
+          <p class="pf-venue">공연장</p>
+          <div class="pf-scope">LIGHT · SOUND</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="festival" id="shakers">
+        <div class="pf-img" style="background-image:url('assets/shakers/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 014</span><span class="pf-tag">FESTIVAL</span></div>
+          <h3>쉐이커스 캠프 페스티벌</h3>
+          <p class="pf-venue">페스티벌 현장</p>
+          <div class="pf-scope">TOTAL SYSTEM · FESTIVAL</div>
+        </div>
+      </a>
+
+      <a href="#" class="pf-card pf-w6 reveal" data-cat="jazz" id="oktopjazz">
+        <div class="pf-img" style="background-image:url('assets/oktopjazz/stage-01.webp')"></div>
+        <div class="pf-body">
+          <div class="pf-meta"><span class="pf-num">WORK · 015</span><span class="pf-tag">JAZZ</span></div>
+          <h3>옥탑재즈 — 아트센터 인천</h3>
+          <p class="pf-venue">아트센터 인천</p>
+          <div class="pf-scope">CONCERT · JAZZ · LIGHT</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<section class="cta-block" style="border-top:1px solid var(--amber)">
+  <div class="cta-inner">
+    <h2 class="reveal">다음 프로젝트를<br><span class="em">우리와 함께.</span></h2>
+    <div class="cta-right reveal">
+      <a href="contact.html" class="btn btn-primary" style="padding:18px 32px">견적 문의하기 <span class="arr">→</span></a>
+      <a href="tel:+8201077370387" class="cta-phone"><span class="lbl">DIRECT</span>010 · 7737 · 0387</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="mk">STAGE WORKS</div>
+      <div class="kr">무대공작소 조명음향렌탈연합</div>
+      <p>공연 제작 경험에서 출발한 시스템 설계팀.</p>
+    </div>
+    <div><h4>Services</h4><ul>
+      <li><a href="services.html#lighting">조명 렌탈</a></li>
+      <li><a href="services.html#sound">음향 렌탈</a></li>
+      <li><a href="services.html#led">LED 스크린</a></li>
+    </ul></div>
+    <div><h4>Studio</h4><ul>
+      <li><a href="about.html">회사 소개</a></li>
+      <li><a href="portfolio.html">프로젝트</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li><a href="tel:+8201077370387">010 · 7737 · 0387</a></li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 STAGE WORKS.</span>
+    <span><span class="amber-dot">●</span> ON AIR · EST. 2015</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Filter
+const btns = document.querySelectorAll('#pfFilter button');
+const cards = document.querySelectorAll('#pfGrid .pf-card');
+btns.forEach(b => b.addEventListener('click', () => {
+  btns.forEach(x => x.classList.remove('on'));
+  b.classList.add('on');
+  const f = b.dataset.f;
+  cards.forEach(c => {
+    if (f === 'all' || c.dataset.cat === f) c.style.display = '';
+    else c.style.display = 'none';
+  });
+}));
+</script>
+</body>
+</html>

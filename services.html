@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services · STAGE WORKS 무대공작소</title>
+<meta name="description" content="조명·LED·음향·중계방송·특수효과·무대구조·시공 7개 카테고리. 렌탈 패키지부터 풀 프로덕션·상설 시공까지 무대공작소가 제공하는 서비스 전 범위.">
+<link rel="canonical" href="https://stageworks.kr/services">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STAGE WORKS 무대공작소">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://stageworks.kr/services">
+<meta property="og:title" content="Services · STAGE WORKS 무대공작소">
+<meta property="og:description" content="조명·LED·음향·중계·특수효과·무대구조·시공 7개 카테고리. 렌탈부터 풀 프로덕션까지 제공하는 서비스 전 범위.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/stage.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0E10'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23E8863A'/%3E%3C/svg%3E">
+<style>
+.page-hero { padding: clamp(120px, 15vw, 200px) 0 clamp(48px, 7vw, 96px); border-bottom: 1px solid var(--line); }
+.page-hero .wrap { display: grid; grid-template-columns: 160px 1fr; gap: 48px; }
+.page-hero .cue { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--amber); }
+.page-hero h1 { font-family: 'Paperlogy', sans-serif; font-weight: 900; font-size: var(--fs-hero); line-height: 0.92; letter-spacing: -0.035em; color: var(--ivory); margin: 24px 0; max-width: 16ch; }
+.page-hero h1 .em { color: var(--amber); }
+.page-hero .lead { font-size: var(--fs-h3); line-height: 1.65; color: var(--body); max-width: 54ch; margin-top: 24px; }
+@media (max-width: 720px) { .page-hero .wrap { grid-template-columns: 1fr; gap: 16px; } }
+
+.svc-anchor {
+  position: sticky; top: 64px; background: rgba(14,14,16,0.92); backdrop-filter: blur(18px);
+  z-index: 50; border-bottom: 1px solid var(--line); padding: 14px var(--gutter);
+}
+@media (max-width: 900px) { .svc-anchor { top: 56px; } }
+.svc-anchor-inner { max-width: var(--max); margin: 0 auto; display: flex; gap: 8px; overflow-x: auto; }
+.svc-anchor a {
+  font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--body); padding: 8px 14px; border: 1px solid var(--line); border-radius: 2px;
+  white-space: nowrap; transition: all 0.22s var(--ease);
+}
+.svc-anchor a:hover { border-color: var(--amber); color: var(--amber); }
+
+.svc-block { padding: clamp(80px, 10vw, 130px) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 120px; }
+.svc-block-head {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 64px;
+  margin-bottom: 64px; align-items: start;
+}
+@media (max-width: 900px) { .svc-block-head { grid-template-columns: 1fr; gap: 24px; } }
+.svc-block-head .ch {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+  letter-spacing: 0.2em; color: var(--amber); margin-bottom: 20px;
+}
+.svc-block-head h2 {
+  font-family: 'Paperlogy', sans-serif; font-weight: 800;
+  font-size: var(--fs-disp); line-height: 1.05; letter-spacing: -0.025em;
+  color: var(--ivory); max-width: 14ch;
+}
+.svc-block-head .hint { font-size: 15px; line-height: 1.7; color: var(--body); max-width: 50ch; }
+.svc-block-head .hint strong { color: var(--ivory); font-weight: 700; }
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid var(--line);
+}
+.price-table th, .price-table td {
+  padding: 18px 20px; text-align: left;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px; vertical-align: top;
+}
+.price-table th {
+  font-family: 'Inter', sans-serif; font-size: 10px;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--dim); font-weight: 600;
+  padding: 14px 20px;
+}
+.price-table .pt-code { font-family: 'JetBrains Mono', monospace; color: var(--amber); font-size: 11px; letter-spacing: 0.1em; width: 80px; }
+.price-table .pt-name { color: var(--ivory); font-weight: 600; font-family: 'Paperlogy', sans-serif; font-size: 15px; }
+.price-table .pt-name small { display: block; color: var(--dim); font-size: 11px; font-weight: 400; letter-spacing: 0.08em; margin-top: 3px; font-family: 'JetBrains Mono', monospace; }
+.price-table .pt-desc { color: var(--body); line-height: 1.55; }
+.price-table .pt-price { font-family: 'Paperlogy', sans-serif; font-size: 16px; font-weight: 700; color: var(--ivory); white-space: nowrap; font-feature-settings: 'tnum' 1; text-align: right; }
+.price-table tr:hover { background: rgba(232,134,58,0.03); }
+
+.note-block {
+  background: var(--char); border: 1px solid var(--line); border-top: 1px solid var(--amber);
+  padding: 24px 28px; margin-top: 40px;
+}
+.note-block h4 { font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: var(--amber); margin-bottom: 12px; }
+.note-block ul { list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 13.5px; color: var(--body); line-height: 1.6; }
+.note-block li { padding-left: 16px; position: relative; }
+.note-block li::before { content: '·'; position: absolute; left: 4px; color: var(--amber); font-weight: 700; }
+
+@media (max-width: 720px) {
+  .price-table .pt-code { display: none; }
+  .price-table th:nth-child(1), .price-table td:nth-child(1) { display: none; }
+}
+</style>
+</head>
+<body>
+
+<aside class="rail">
+  <div class="rail-mark">SW<br>— <span style="color:var(--amber)">22</span></div>
+  <div class="rail-vert">SERVICES · 7 CHANNELS</div>
+  <div class="rail-phone">010 · 7737 · 0387</div>
+</aside>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand">
+    <span class="dot"></span><span class="mk">STAGE WORKS</span><span class="kr">무대공작소</span>
+  </a>
+  <nav class="nav-links">
+    <a href="index.html">Index</a>
+    <a href="about.html">About</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html" class="nav-cta">견적 문의</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div>
+      <div class="cue">REEL · SERVICES</div>
+    </div>
+    <div>
+      <h1>일곱 채널.<br><span class="em">하나의 오퍼레이션.</span></h1>
+      <p class="lead">조명 · 음향 · LED · 중계 · 특수효과 · 무대 · 시공. 가격은 숨기지 않는다. 모든 표준 패키지에 설치·운영·철거가 포함된다.</p>
+    </div>
+  </div>
+</section>
+
+<nav class="svc-anchor">
+  <div class="svc-anchor-inner">
+    <a href="#lighting">CH 01 · Lighting</a>
+    <a href="#sound">CH 02 · Sound</a>
+    <a href="#led">CH 03 · LED</a>
+    <a href="#broadcast">CH 04 · Broadcast</a>
+    <a href="#sfx">CH 05 · FX</a>
+    <a href="#stage">CH 06 · Stage</a>
+    <a href="#install">CH 07 · Install</a>
+  </div>
+</nav>
+
+<!-- LIGHTING -->
+<section class="svc-block" id="lighting">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 01 / 07 — STAGE LIGHTING</div>
+        <h2>무대 조명 렌탈.</h2>
+      </div>
+      <div class="hint">
+        <p>무빙헤드, PAR, 스팟, 팔로우 스팟, 스트로브. <strong>조명감독 상주.</strong> 버스킹부터 대형 페스티벌까지 13종 패키지. 모든 가격은 1일 기준이며 전일 설치 시 50% 추가된다.</p>
+      </div>
+    </div>
+
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE · 1일</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">L.01</td><td class="pt-name">PAR LIGHT PACKAGE 1<small>버스킹 · 소규모 행사</small></td><td class="pt-desc">파라이트 8대 · 조명감독 1인 · 기본 콘솔 · 딤머 · 분배전원</td><td class="pt-price">500,000원</td></tr>
+        <tr><td class="pt-code">L.02</td><td class="pt-name">소규모 조명 패키지<small>버스킹 · 기업·학교 행사</small></td><td class="pt-desc">무빙 8대 · 조명감독 · 기본 콘솔 · 포그머신 포함</td><td class="pt-price">600,000원</td></tr>
+        <tr><td class="pt-code">L.03</td><td class="pt-name">소규모 패키지 B<small>균형형 · 학교·기업 행사</small></td><td class="pt-desc">무대기본 + 컬러 + 빔 연출 · 포그머신 · 조명스탠드 1조</td><td class="pt-price">800,000원</td></tr>
+        <tr><td class="pt-code">L.04</td><td class="pt-name">기본조명 A<small>중규모 공연 · 콘서트</small></td><td class="pt-desc">빔무빙 8 · 워시무빙 8 · LED파 4 · 감독 1인+보조 1인</td><td class="pt-price">1,000,000원</td></tr>
+        <tr><td class="pt-code">L.05</td><td class="pt-name">기본조명 B<small>임팩트 추가형</small></td><td class="pt-desc">빔무빙 8 · 워시무빙 8 · LED파 4 · 스트로브 4</td><td class="pt-price">1,200,000원</td></tr>
+        <tr style="background:rgba(232,134,58,0.04)"><td class="pt-code">L.06</td><td class="pt-name">중형 A — BEST<small>대학·기업·지역축제</small></td><td class="pt-desc">빔무빙 12 · 워시무빙 8 · LED파 8 · 스트로브 4 · 감독+보조</td><td class="pt-price">1,500,000원</td></tr>
+        <tr><td class="pt-code">L.07</td><td class="pt-name">중형 B — BEST<small>재즈·클래식·종교행사</small></td><td class="pt-desc">스팟무빙 8 · 워시무빙 8 · LED파 8 · 스트로브 4 · 인물강조형</td><td class="pt-price">1,500,000원</td></tr>
+        <tr><td class="pt-code">L.08</td><td class="pt-name">중형 C — BEST<small>중형 콘서트 · 종교행사</small></td><td class="pt-desc">스팟무빙 12 · 워시무빙 12 · LED파 8 · 감독 1+보조 2</td><td class="pt-price">1,800,000원</td></tr>
+        <tr><td class="pt-code">L.09</td><td class="pt-name">대형 A — BEST<small>대형콘서트 · 갈라쇼</small></td><td class="pt-desc">스팟무빙 12 · 워시무빙 12 · LED파 8 · 스트로브 12</td><td class="pt-price">2,000,000원</td></tr>
+        <tr style="background:rgba(232,134,58,0.04)"><td class="pt-code">L.10</td><td class="pt-name">대형 B — BEST<small>대형 페스티벌</small></td><td class="pt-desc">스팟무빙 16 · 워시무빙 12 · LED파 8 · 스트로브 12 · 스탠드 2조</td><td class="pt-price">2,300,000원</td></tr>
+        <tr><td class="pt-code">L.OPT-A</td><td class="pt-name">옵션 · 레트로라이트<small>재즈·뮤비·종교행사</small></td><td class="pt-desc">스탠드형 대형 파라이트 6대 · 조명스탠드 6개 (패키지 추가 시)</td><td class="pt-price">300,000원</td></tr>
+        <tr><td class="pt-code">L.OPT-B</td><td class="pt-name">옵션 · 레트로 바라이트<small>락·힙합·재즈·대학행사</small></td><td class="pt-desc">스탠드형 바라이트 8개 · 조명지지대 8개</td><td class="pt-price">300,000원</td></tr>
+        <tr><td class="pt-code">L.OPT-C</td><td class="pt-name">옵션 · 레트로 패키지<small>감성+임팩트 업그레이드</small></td><td class="pt-desc">레트로 라이트 6개 + 레트로 바라이트 8개</td><td class="pt-price">400,000원</td></tr>
+      </tbody>
+    </table>
+    <div class="note-block">
+      <h4>공통 사항</h4>
+      <ul>
+        <li>모든 가격은 1일 기준. 전일 설치 시 50% 비용 추가.</li>
+        <li>조명감독 상주 · 기본 콘솔 · 딤머 · 분배전원 포함.</li>
+        <li>조명스탠드는 현장 상황에 따라 사용 여부가 결정된다.</li>
+        <li>옵션 패키지 단독 렌탈 시 20만원 추가 비용 발생.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SOUND -->
+<section class="svc-block" id="sound">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 02 / 07 — STAGE SOUND</div>
+        <h2>무대 음향 렌탈.</h2>
+      </div>
+      <div class="hint">
+        <p>타소 T2 라인어레이 · 마이다스 M32R 콘솔 · 젠하이져 무선마이크. <strong>300명~1,500명 커버.</strong> 음향감독·보조감독 상주. 악기마이크 풀세트 포함.</p>
+      </div>
+    </div>
+
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE · 1일</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">S.D</td><td class="pt-name">음향 패키지 D<small>300명 커버 · 세미나·학교·종교</small></td><td class="pt-desc">M32R · 타소 브릴리언트 컬럼어레이 · 젠하이져 무선 6 · 인이어 2 · 모니터 4</td><td class="pt-price">800,000원</td></tr>
+        <tr><td class="pt-code">S.C</td><td class="pt-name">음향 패키지 C<small>300~700명 커버</small></td><td class="pt-desc">M32R · 타소 T2 라인어레이 · 무선마이크 8 · 벨트팩 6 · 인이어 2 · 모니터 6</td><td class="pt-price">1,200,000원</td></tr>
+        <tr style="background:rgba(232,134,58,0.04)"><td class="pt-code">S.A</td><td class="pt-name">음향 패키지 A — FEATURED<small>700~1,000명 커버</small></td><td class="pt-desc">M32R · T2 라인어레이 · 무선마이크 8 · 벨트팩 6 · 인이어 4 · 모니터 6</td><td class="pt-price">1,500,000원</td></tr>
+        <tr><td class="pt-code">S.B</td><td class="pt-name">음향 패키지 B<small>1,000~1,500명 커버</small></td><td class="pt-desc">M32R · T2 라인어레이 · 딜레이 스피커 1조 · 무선마이크 8 · 인이어 4</td><td class="pt-price">1,800,000원</td></tr>
+        <tr><td class="pt-code">S.SCH-B</td><td class="pt-name">학교축제 패키지 B<small>음향 + 조명 통합</small></td><td class="pt-desc">음향 풀세트 + 빔·워시무빙 각 8 · 스트로브 8 · 파라이트 8 · 타이거터치</td><td class="pt-price">2,200,000원</td></tr>
+        <tr style="background:rgba(232,134,58,0.04)"><td class="pt-code">S.SCH-A</td><td class="pt-name">학교축제 패키지 A — BEST SELLER<small>음향 + 악기 + 조명 완성세트</small></td><td class="pt-desc">음향+조명+기타/베이스 앰프+PC2X 건반+리얼드럼세트 · 감독 4인</td><td class="pt-price">2,500,000원</td></tr>
+      </tbody>
+    </table>
+    <div class="note-block">
+      <h4>공통 사항</h4>
+      <ul>
+        <li>모든 패키지에 음향콘솔 M32R · 악기마이크 풀세트 · 마이크라인 · 전기팩 · 소모품 포함.</li>
+        <li>학교축제 패키지는 당일 행사 기준. 전날 설치 및 리허설 시 60만원 인건비 추가.</li>
+        <li>음향감독 1인 + 보조감독 1인 상주. 패키지 A·B는 감독 각 2인.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- LED -->
+<section class="svc-block" id="led">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 03 / 07 — LED SCREEN</div>
+        <h2>LED 스크린.</h2>
+      </div>
+      <div class="hint"><p>P2.6 · P3.9 · P4.8 고해상도 LED 패널과 미디어 서버. <strong>실내외 겸용.</strong> 크기·해상도·환경에 따라 별도 견적.</p></div>
+    </div>
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">D.01</td><td class="pt-name">LED 스크린 P2.6<small>INDOOR · HIGH RES</small></td><td class="pt-desc">고해상도 실내 LED 패널. 근거리 시청 최적화.</td><td class="pt-price">별도 견적</td></tr>
+        <tr><td class="pt-code">D.02</td><td class="pt-name">LED 스크린 P3.9<small>INDOOR/OUTDOOR</small></td><td class="pt-desc">실내외 겸용 LED 패널. 다용도 활용 가능.</td><td class="pt-price">별도 견적</td></tr>
+        <tr><td class="pt-code">D.03</td><td class="pt-name">LED 스크린 P4.8<small>OUTDOOR</small></td><td class="pt-desc">야외 대형 LED 패널.</td><td class="pt-price">별도 견적</td></tr>
+        <tr><td class="pt-code">D.04</td><td class="pt-name">미디어 서버<small>CONTROL</small></td><td class="pt-desc">영상 콘텐츠 송출 및 제어 시스템.</td><td class="pt-price">렌탈 문의</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- BROADCAST -->
+<section class="svc-block" id="broadcast">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 04 / 07 — BROADCASTING</div>
+        <h2>중계 · 송출.</h2>
+      </div>
+      <div class="hint"><p>멀티캠 촬영 · 실시간 스위칭 · 라이브 스트리밍. <strong>온·오프 하이브리드</strong> 이벤트 대응.</p></div>
+    </div>
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">B.01</td><td class="pt-name">멀티캠 시스템<small>MULTICAM</small></td><td class="pt-desc">다중 카메라 · 실시간 스위칭 시스템.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">B.02</td><td class="pt-name">라이브 스트리밍<small>LIVE STREAM</small></td><td class="pt-desc">온라인 송출 인코더 · 스위처.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">B.03</td><td class="pt-name">프로페셔널 카메라<small>BROADCAST CAM</small></td><td class="pt-desc">방송용 캠코더.</td><td class="pt-price">렌탈 문의</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- SFX -->
+<section class="svc-block" id="sfx">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 05 / 07 — SPECIAL FX</div>
+        <h2>특수 효과.</h2>
+      </div>
+      <div class="hint"><p>CO2 제트 · 불꽃 · 컨페티 · 레이저 · 헤이즈. <strong>안전 인증 장비</strong>와 전담 오퍼레이터.</p></div>
+    </div>
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">F.01</td><td class="pt-name">CO2 제트<small>CO2 JET</small></td><td class="pt-desc">무대 특수효과 CO2 분사기.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">F.02</td><td class="pt-name">불꽃 머신<small>FLAME / SPARK</small></td><td class="pt-desc">스파크 · 화염 연출 장비.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">F.03</td><td class="pt-name">컨페티 머신<small>CONFETTI</small></td><td class="pt-desc">색종이 발사기.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">F.04</td><td class="pt-name">레이저 시스템<small>LASER</small></td><td class="pt-desc">공연용 레이저 연출 장비.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">F.05</td><td class="pt-name">헤이즈 머신<small>HAZE</small></td><td class="pt-desc">조명 빔 가시화 연무기.</td><td class="pt-price">렌탈 문의</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- STAGE -->
+<section class="svc-block" id="stage">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 06 / 07 — STAGE SETUP</div>
+        <h2>무대 설치.</h2>
+      </div>
+      <div class="hint"><p>무대 구조물 · 트러스 · 리깅 · 백드롭. <strong>하중·안전 계산 기반 설계.</strong></p></div>
+    </div>
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PACKAGE</th><th>DETAIL</th><th style="text-align:right">PRICE</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">T.01</td><td class="pt-name">무대 구조물<small>CUSTOM STAGE</small></td><td class="pt-desc">맞춤형 무대 제작 및 설치.</td><td class="pt-price">별도 견적</td></tr>
+        <tr><td class="pt-code">T.02</td><td class="pt-name">트러스 시스템<small>TRUSS</small></td><td class="pt-desc">조명 · 음향 설치용 트러스 구조물.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">T.03</td><td class="pt-name">리깅 시스템<small>RIGGING</small></td><td class="pt-desc">장비 공중 설치 및 안전 리깅.</td><td class="pt-price">렌탈 문의</td></tr>
+        <tr><td class="pt-code">T.04</td><td class="pt-name">백드롭 · 무대막<small>BACKDROP</small></td><td class="pt-desc">무대 배경막 및 커튼 설치.</td><td class="pt-price">렌탈 문의</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- INSTALL -->
+<section class="svc-block" id="install" style="border-bottom:none">
+  <div class="wrap">
+    <div class="svc-block-head reveal">
+      <div>
+        <div class="ch">CH 07 / 07 — INSTALLATION</div>
+        <h2>음향 · 조명 시공.</h2>
+      </div>
+      <div class="hint"><p>교회 · 강당 · 공연장 · 대학교 강당. 시스템 <strong>설계부터 영구 설치 · 유지보수</strong>까지.</p></div>
+    </div>
+    <table class="price-table reveal">
+      <thead><tr><th>CODE</th><th>PROJECT</th><th>DETAIL</th><th style="text-align:right">PRICE</th></tr></thead>
+      <tbody>
+        <tr><td class="pt-code">I.01</td><td class="pt-name">교회 음향 시공<small>CHURCH SOUND</small></td><td class="pt-desc">예배 환경 최적화 음향 시스템 설계 · 시공.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.02</td><td class="pt-name">교회 조명 시공<small>CHURCH LIGHT</small></td><td class="pt-desc">예배 · 공연 겸용 조명 시스템 설계 · 설치.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.03</td><td class="pt-name">대강당 음향<small>HALL SOUND</small></td><td class="pt-desc">강연 · 세미나 · 공연 겸용 대강당 음향.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.04</td><td class="pt-name">공연장 조명<small>THEATER LIGHT</small></td><td class="pt-desc">공연장 전용 조명 시스템 설계 · 설치.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.05</td><td class="pt-name">학교 강당 통합<small>UNIVERSITY AV</small></td><td class="pt-desc">학교 강당 음향 · 조명 통합 시공.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.06</td><td class="pt-name">LED 스크린 시공<small>LED INSTALL</small></td><td class="pt-desc">LED 스크린 화면 설계 · 영구 설치.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.07</td><td class="pt-name">라이브예배 영상<small>LIVE VIDEO</small></td><td class="pt-desc">실시간 중계 · 송출 영상 시스템 구축.</td><td class="pt-price">현장 견적</td></tr>
+        <tr><td class="pt-code">I.08</td><td class="pt-name">기업 세미나 음향<small>CORPORATE</small></td><td class="pt-desc">기업 회의실 · 세미나룸 음향 시공.</td><td class="pt-price">현장 견적</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cta-block" style="border-top:1px solid var(--amber)">
+  <div class="cta-inner">
+    <h2 class="reveal">견적을<br><span class="em">24시간 안에 보낸다.</span></h2>
+    <div class="cta-right reveal">
+      <a href="contact.html" class="btn btn-primary" style="padding:18px 32px">견적 문의하기 <span class="arr">→</span></a>
+      <a href="tel:+8201077370387" class="cta-phone">
+        <span class="lbl">DIRECT · 24H 이내 응답</span>010 · 7737 · 0387
+      </a>
+      <p class="mini">통합 견적 시 10~20% 절감 · 세금계산서 발행 · 14일 전까지 무료 변경.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="mk">STAGE WORKS</div>
+      <div class="kr">무대공작소 조명음향렌탈연합</div>
+      <p>공연 제작 경험에서 출발한 시스템 설계팀.</p>
+    </div>
+    <div><h4>Services</h4><ul>
+      <li><a href="services.html#lighting">조명 렌탈</a></li>
+      <li><a href="services.html#sound">음향 렌탈</a></li>
+      <li><a href="services.html#led">LED 스크린</a></li>
+      <li><a href="services.html#install">시공</a></li>
+    </ul></div>
+    <div><h4>Studio</h4><ul>
+      <li><a href="about.html">회사 소개</a></li>
+      <li><a href="portfolio.html">프로젝트</a></li>
+      <li><a href="contact.html">견적 문의</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li><a href="tel:+8201077370387">010 · 7737 · 0387</a></li>
+      <li style="color:var(--dim)">Seoul · KR</li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 STAGE WORKS.</span>
+    <span><span class="amber-dot">●</span> ON AIR · EST. 2015</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact · STAGE WORKS 무대공작소</title>
+<meta name="description" content="견적 문의·프로젝트 상담·파트너십. STAGE WORKS 무대공작소 연락처와 문의 양식. 콘서트·방송·야외행사 조명·음향·LED 렌탈과 시공 상담.">
+<link rel="canonical" href="https://stageworks.kr/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="STAGE WORKS 무대공작소">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:url" content="https://stageworks.kr/contact">
+<meta property="og:title" content="Contact · STAGE WORKS 무대공작소">
+<meta property="og:description" content="견적 문의·프로젝트 상담·파트너십. 콘서트·방송·야외행사 조명·음향·LED 렌탈과 시공 상담은 무대공작소.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/stage.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230E0E10'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%23E8863A'/%3E%3C/svg%3E">
+<style>
+.page-hero { padding: clamp(120px, 15vw, 200px) 0 clamp(48px, 7vw, 96px); border-bottom: 1px solid var(--line); }
+.page-hero .wrap { display: grid; grid-template-columns: 160px 1fr; gap: 48px; }
+.page-hero .cue { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--amber); }
+.page-hero h1 { font-family: 'Paperlogy', sans-serif; font-weight: 900; font-size: var(--fs-hero); line-height: 0.92; letter-spacing: -0.035em; color: var(--ivory); margin: 24px 0; max-width: 14ch; }
+.page-hero h1 .em { color: var(--amber); }
+.page-hero .lead { font-size: var(--fs-h3); line-height: 1.65; color: var(--body); max-width: 54ch; margin-top: 24px; }
+@media (max-width: 720px) { .page-hero .wrap { grid-template-columns: 1fr; gap: 16px; } }
+
+.ct-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; }
+@media (max-width: 900px) { .ct-grid { grid-template-columns: 1fr; gap: 40px; } }
+
+.form {
+  background: var(--char); border: 1px solid var(--line); border-top: 1px solid var(--amber);
+  padding: 40px;
+}
+.form .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.form .head h3 { font-family: 'Paperlogy', sans-serif; font-size: clamp(20px, 1.6vw, 24px); color: var(--ivory); font-weight: 800; letter-spacing: -0.01em; }
+.form .head .code { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.15em; color: var(--amber); }
+
+.field { margin-bottom: 20px; }
+.field label {
+  display: block;
+  font-family: 'Inter', sans-serif; font-size: 10px;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--dim); font-weight: 600;
+  margin-bottom: 10px;
+}
+.field label .req { color: var(--amber); }
+.field input, .field textarea, .field select {
+  width: 100%; background: transparent;
+  border: 1px solid var(--line); border-radius: 2px;
+  padding: 14px 16px;
+  font-family: 'Inter', 'Paperlogy', sans-serif; font-size: 14px;
+  color: var(--ivory);
+  transition: border-color 0.22s var(--ease);
+}
+.field input::placeholder, .field textarea::placeholder { color: var(--dim); }
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: var(--amber); }
+.field textarea { min-height: 140px; resize: vertical; font-family: inherit; line-height: 1.6; }
+.field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23E8863A' stroke-width='1.5' fill='none'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; background-size: 12px; padding-right: 40px; }
+
+.row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 560px) { .row-2 { grid-template-columns: 1fr; } }
+
+.chk-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.chk {
+  position: relative; display: flex; align-items: center; gap: 10px;
+  padding: 12px 14px; border: 1px solid var(--line); border-radius: 2px;
+  cursor: pointer; transition: all 0.22s var(--ease);
+  font-size: 13px; color: var(--body);
+}
+.chk input { position: absolute; opacity: 0; pointer-events: none; }
+.chk .b { width: 14px; height: 14px; border: 1px solid var(--line-2); flex-shrink: 0; position: relative; }
+.chk input:checked ~ .b { border-color: var(--amber); background: var(--amber); }
+.chk input:checked ~ .b::after { content: ''; position: absolute; inset: 3px; background: var(--black); }
+.chk:hover { border-color: var(--line-2); }
+.chk:has(input:checked) { border-color: var(--amber); color: var(--ivory); background: rgba(232,134,58,0.04); }
+@media (max-width: 560px) { .chk-grid { grid-template-columns: 1fr; } }
+
+.form-submit { width: 100%; padding: 18px; margin-top: 16px; justify-content: center; }
+
+.side {
+  display: flex; flex-direction: column; gap: 32px;
+}
+.side-block {
+  border: 1px solid var(--line); padding: 28px;
+  background: var(--char);
+}
+.side-block h4 { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--amber); margin-bottom: 14px; font-weight: 600; }
+.side-block .big {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(20px, 1.8vw, 26px); color: var(--ivory);
+  letter-spacing: 0.04em; line-height: 1.3;
+}
+.side-block .sub { font-size: 13px; color: var(--body); margin-top: 10px; line-height: 1.6; }
+
+.qs { display: flex; flex-direction: column; }
+.qs-row {
+  display: grid; grid-template-columns: 40px 1fr; gap: 20px;
+  padding: 18px 0; border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+.qs-row:last-child { border-bottom: none; }
+.qs-n { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--amber); letter-spacing: 0.1em; padding-top: 2px; }
+.qs-q { font-family: 'Paperlogy', sans-serif; font-weight: 700; font-size: 15px; color: var(--ivory); margin-bottom: 8px; line-height: 1.35; }
+.qs-a { font-size: 13.5px; color: var(--body); line-height: 1.65; }
+
+.pm-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
+.pm-cell { background: var(--black); padding: 28px; }
+.pm-cell h5 { font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--dim); margin-bottom: 12px; font-weight: 600; }
+.pm-cell p { font-family: 'Paperlogy', sans-serif; font-weight: 700; font-size: 18px; color: var(--ivory); line-height: 1.4; }
+.pm-cell p small { display: block; font-size: 13px; color: var(--body); font-weight: 400; margin-top: 6px; line-height: 1.5; }
+@media (max-width: 560px) { .pm-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<aside class="rail">
+  <div class="rail-mark">SW<br>— <span style="color:var(--amber)">22</span></div>
+  <div class="rail-vert">CONTACT · 24H QUOTE</div>
+  <div class="rail-phone">010 · 7737 · 0387</div>
+</aside>
+
+<header class="nav">
+  <a href="index.html" class="nav-brand"><span class="dot"></span><span class="mk">STAGE WORKS</span><span class="kr">무대공작소</span></a>
+  <nav class="nav-links">
+    <a href="index.html">Index</a><a href="about.html">About</a>
+    <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+    <a href="contact.html" class="nav-cta active">견적 문의</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div><div class="cue">REEL · CONTACT</div></div>
+    <div>
+      <h1>견적을<br><span class="em">24시간 안에</span> 보냅니다.</h1>
+      <p class="lead">행사 유형과 규모를 알려주시면 맞춤 견적을 송부드립니다. 전화 · 문자 · 폼 모두 같은 창구로 연결됩니다.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="ct-grid">
+
+      <!-- FORM -->
+      <form class="form reveal" onsubmit="event.preventDefault(); alert('견적 요청이 접수되었습니다. 24시간 이내에 담당자가 연락드립니다.'); this.reset();">
+        <div class="head">
+          <h3>견적 요청서</h3>
+          <div class="code">REQ.FORM / 01</div>
+        </div>
+
+        <div class="field">
+          <label>담당자 성함 <span class="req">*</span></label>
+          <input type="text" required placeholder="홍길동">
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label>연락처 <span class="req">*</span></label>
+            <input type="tel" required placeholder="010-0000-0000">
+          </div>
+          <div class="field">
+            <label>이메일</label>
+            <input type="email" placeholder="name@company.com">
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label>소속 / 단체</label>
+            <input type="text" placeholder="기획사 · 학교 · 교회 · 기업">
+          </div>
+          <div class="field">
+            <label>행사 유형 <span class="req">*</span></label>
+            <select required>
+              <option value="">선택해주세요</option>
+              <option>콘서트 / 내한공연</option>
+              <option>페스티벌 · 야외행사</option>
+              <option>학교 축제</option>
+              <option>기업 행사 / 세미나</option>
+              <option>종교 행사 / 예배</option>
+              <option>방송 · 뮤비 촬영</option>
+              <option>영구 시공</option>
+              <option>기타</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="field">
+            <label>행사 일자 <span class="req">*</span></label>
+            <input type="text" required placeholder="2026-XX-XX">
+          </div>
+          <div class="field">
+            <label>예상 관객 규모</label>
+            <select>
+              <option value="">선택</option>
+              <option>100명 이하</option>
+              <option>100 ~ 300명</option>
+              <option>300 ~ 700명</option>
+              <option>700 ~ 1,500명</option>
+              <option>1,500명 이상</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>필요한 서비스 (복수선택)</label>
+          <div class="chk-grid">
+            <label class="chk"><input type="checkbox"><span class="b"></span>무대 조명</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>무대 음향</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>LED 스크린</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>중계 · 송출</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>특수 효과</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>무대 설치</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>음향·조명 시공</label>
+            <label class="chk"><input type="checkbox"><span class="b"></span>아직 모르겠음</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>상세 요청 사항</label>
+          <textarea placeholder="행사 장소, 출연진, 참고 레퍼런스, 예산 범위 등 자유롭게 기재해주세요."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">견적 요청 보내기 <span class="arr">→</span></button>
+      </form>
+
+      <!-- SIDE -->
+      <aside class="side reveal">
+        <div class="side-block">
+          <h4>DIRECT LINE · 24H</h4>
+          <div class="big">010 · 7737 · 0387</div>
+          <p class="sub">전화 · 문자 모두 24시간 이내 응답. 급한 경우 전화 권장.</p>
+        </div>
+
+        <div class="side-block">
+          <h4>EMAIL</h4>
+          <div class="big" style="font-size:18px">stageworks@stageworks.kr</div>
+          <p class="sub">도면 · 무대 평면도 첨부 시 보다 정확한 견적이 가능합니다.</p>
+        </div>
+
+        <div class="side-block">
+          <h4>CONTACT WINDOW</h4>
+          <p class="sub" style="margin-top:0">
+            <strong style="color:var(--ivory)">평일 09:00 ~ 20:00</strong><br>
+            주말 · 공휴일 현장 근무 중 — 문자 또는 이메일 권장. 24시간 이내 반드시 회신드립니다.
+          </p>
+        </div>
+
+        <div class="side-block" style="background:var(--black); border-top:1px solid var(--amber)">
+          <h4>FAST TRACK</h4>
+          <p class="sub" style="margin-top:0; color:var(--body)">
+            긴급 견적 · 7일 이내 행사 진행 문의는 상단 번호로 바로 전화주십시오. 당일 현장 답사 및 견적이 가능합니다.
+          </p>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-top: clamp(80px, 10vw, 130px)">
+      <div class="section-head reveal" style="margin-bottom:48px">
+        <div class="meta">
+          <div class="cue">REEL · FAQ</div>
+          <div class="rule-amber"></div>
+        </div>
+        <div><h2>자주 묻는 질문.</h2></div>
+      </div>
+
+      <div class="qs reveal">
+        <div class="qs-row">
+          <div class="qs-n">Q.01</div>
+          <div>
+            <div class="qs-q">견적 응답까지 얼마나 걸리나요?</div>
+            <div class="qs-a">문의 접수 후 24시간 이내에 맞춤 견적을 송부합니다. 긴급 건은 전화 주시면 즉시 응답 가능합니다.</div>
+          </div>
+        </div>
+        <div class="qs-row">
+          <div class="qs-n">Q.02</div>
+          <div>
+            <div class="qs-q">표준 패키지 가격에 무엇이 포함되어 있나요?</div>
+            <div class="qs-a">1일 기준 설치·리허설·본행사·철수·감독 상주가 모두 포함됩니다. 전날 설치 필요 시 추가 인건비가 발생합니다.</div>
+          </div>
+        </div>
+        <div class="qs-row">
+          <div class="qs-n">Q.03</div>
+          <div>
+            <div class="qs-q">지방·전국 출장이 가능한가요?</div>
+            <div class="qs-a">전국 출장 가능. 수도권 외 지역은 운송비와 숙박비가 별도로 산정됩니다. 견적 단계에서 명확히 안내합니다.</div>
+          </div>
+        </div>
+        <div class="qs-row">
+          <div class="qs-n">Q.04</div>
+          <div>
+            <div class="qs-q">계약금·잔금 구조는 어떻게 되나요?</div>
+            <div class="qs-a">계약금 50% 선입금, 행사 종료 후 잔금 50% 정산이 기본입니다. 세금계산서 발행 가능합니다.</div>
+          </div>
+        </div>
+        <div class="qs-row">
+          <div class="qs-n">Q.05</div>
+          <div>
+            <div class="qs-q">일정 변경 · 취소는 언제까지 가능한가요?</div>
+            <div class="qs-a">행사 14일 전까지 무료 변경 또는 취소가 가능합니다. 이후에는 예약금 일부가 차감될 수 있습니다.</div>
+          </div>
+        </div>
+        <div class="qs-row">
+          <div class="qs-n">Q.06</div>
+          <div>
+            <div class="qs-q">여러 서비스를 동시에 요청하면 할인이 되나요?</div>
+            <div class="qs-a">조명 + 음향 + LED + 무대 등 통합 구성 시 개별 합산 대비 10~20% 절감된 통합 견적이 제공됩니다.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAYMENT INFO -->
+    <div class="pm-grid reveal">
+      <div class="pm-cell"><h5>NATIONAL COVERAGE</h5><p>전국 출장 가능<small>수도권 외 지역 운송·숙박 별도 산정</small></p></div>
+      <div class="pm-cell"><h5>PAYMENT</h5><p>계약금 50% 선입금<small>세금계산서 발행 가능</small></p></div>
+      <div class="pm-cell"><h5>CHANGE POLICY</h5><p>행사 14일 전까지<small>무료 변경 및 취소 가능</small></p></div>
+      <div class="pm-cell"><h5>BUNDLE DISCOUNT</h5><p>통합 구성 10~20% 절감<small>조명 + 음향 + LED + 무대</small></p></div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="mk">STAGE WORKS</div>
+      <div class="kr">무대공작소 조명음향렌탈연합</div>
+      <p>공연 제작 경험에서 출발한 시스템 설계팀.</p>
+    </div>
+    <div><h4>Services</h4><ul>
+      <li><a href="services.html#lighting">조명 렌탈</a></li>
+      <li><a href="services.html#sound">음향 렌탈</a></li>
+      <li><a href="services.html#led">LED 스크린</a></li>
+    </ul></div>
+    <div><h4>Studio</h4><ul>
+      <li><a href="about.html">회사 소개</a></li>
+      <li><a href="portfolio.html">프로젝트</a></li>
+    </ul></div>
+    <div><h4>Contact</h4><ul>
+      <li><a href="tel:+8201077370387">010 · 7737 · 0387</a></li>
+      <li style="color:var(--dim)">Seoul · KR</li>
+    </ul></div>
+  </div>
+  <div class="foot-bottom">
+    <span>© 2026 STAGE WORKS.</span>
+    <span><span class="amber-dot">●</span> ON AIR · EST. 2015</span>
+  </div>
+</footer>
+
+<script>
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-label="cue sheet motif">
+  
+  
+  <line x1="0" y1="28" x2="640" y2="28" stroke="#2E2E30"></line>
+  
+  <line x1="96" y1="0" x2="96" y2="240" stroke="#2E2E30"></line>
+  <line x1="220" y1="0" x2="220" y2="240" stroke="#2E2E30"></line>
+  <line x1="420" y1="0" x2="420" y2="240" stroke="#2E2E30"></line>
+  
+  <text class="lbl" x="12" y="18">TIMECODE</text>
+  <text class="lbl" x="108" y="18">CUE</text>
+  <text class="lbl" x="232" y="18">DESCRIPTION</text>
+  <text class="lbl" x="432" y="18">CHANNEL</text>
+  
+  <g>
+    <line x1="0" y1="60" x2="640" y2="60" stroke="#2E2E30"></line>
+    <line x1="0" y1="92" x2="640" y2="92" stroke="#2E2E30"></line>
+    <line x1="0" y1="124" x2="640" y2="124" stroke="#2E2E30"></line>
+    <line x1="0" y1="156" x2="640" y2="156" stroke="#2E2E30"></line>
+    <line x1="0" y1="188" x2="640" y2="188" stroke="#2E2E30"></line>
+    <line x1="0" y1="220" x2="640" y2="220" stroke="#2E2E30"></line>
+  </g>
+  <text class="tc" x="12" y="50">00:00:00.00</text>
+  <text class="lbl" x="108" y="50">GO</text>
+  <text class="lbl" x="232" y="50">HOUSE OUT · SPOT STBY</text>
+  <text class="tc" x="432" y="50">L1 · L2</text>
+
+  <text class="tc" x="12" y="82">00:00:12.40</text>
+  <text class="lbl amb" x="108" y="82">1.0</text>
+  <text class="lbl" x="232" y="82">ARTIST ENTRY · AMBER WASH</text>
+  <text class="tc amb" x="432" y="82">L3 · 74%</text>
+
+  <text class="tc" x="12" y="114">00:01:48.02</text>
+  <text class="lbl" x="108" y="114">2.0</text>
+  <text class="lbl" x="232" y="114">BAND IN · DRUM FILL</text>
+  <text class="tc" x="432" y="114">A5–A8</text>
+
+  <text class="tc" x="12" y="146">00:03:22.55</text>
+  <text class="lbl" x="108" y="146">3.0</text>
+  <text class="lbl" x="232" y="146">LED CUE · VIDEO ROLL</text>
+  <text class="tc" x="432" y="146">V1 · 01</text>
+
+  <text class="tc" x="12" y="178">00:04:10.00</text>
+  <text class="lbl" x="108" y="178">3.5</text>
+  <text class="lbl" x="232" y="178">HAZE · STROBE LOW</text>
+  <text class="tc" x="432" y="178">L8 · 20%</text>
+
+  <text class="tc" x="12" y="210">00:06:44.20</text>
+  <text class="lbl amb" x="108" y="210">4.0</text>
+  <text class="lbl" x="232" y="210">FULL STAGE · SPOT FOH</text>
+  <text class="tc amb" x="432" y="210">ALL · 100%</text>
+</svg>

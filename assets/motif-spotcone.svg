@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="spotlight cone motif">
+  <defs>
+    <linearGradient id="sp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8863A" stop-opacity="0.7"></stop>
+      <stop offset="70%" stop-color="#E8863A" stop-opacity="0.08"></stop>
+      <stop offset="100%" stop-color="#E8863A" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+  
+  <rect x="184" y="24" width="32" height="16" fill="#E8E1D4"></rect>
+  <line x1="200" y1="40" x2="200" y2="52" stroke="#E8E1D4" stroke-width="2"></line>
+  
+  <path d="M 200 52 L 80 280 L 320 280 Z" fill="url(#sp)" stroke="#2E2E30" stroke-width="1"></path>
+  
+  <line x1="40" y1="280" x2="360" y2="280" stroke="#2E2E30" stroke-width="1"></line>
+  
+  <ellipse cx="200" cy="280" rx="70" ry="4" fill="#E8863A"></ellipse>
+</svg>
